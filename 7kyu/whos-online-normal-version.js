@@ -4,15 +4,6 @@ const whosOnline = (friends) => {
   let awayUsers = [];
 
   for (const el of friends) {
-    // if (el.status === "online" && el.lastActivity <= 10) {
-    //   onlineUsers.push(el.username);
-    // }
-    // if (el.status === "offline") {
-    //   offlineUsers.push(el.username);
-    // }
-    // if (el.status === "online" && el.lastActivity > 10) {
-    //   awayUsers.push(el.username);
-    // }
     switch (true) {
       case el.status === "online" && el.lastActivity <= 10:
         onlineUsers.push(el.username);
