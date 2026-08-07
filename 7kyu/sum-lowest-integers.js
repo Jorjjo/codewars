@@ -1,0 +1,9 @@
+//Create a function that returns the sum of the two lowest positive numbers given an
+//array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+function sumTwoSmallestNumbers(arr) {
+    const sorted = arr.sort((a, b) => a - b);
+    return sorted[0] + sorted[1];
+}
+
+console.log(sumTwoSmallestNumbers([3, 87, 45, 12, 7]));
